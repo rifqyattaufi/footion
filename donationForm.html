@@ -11,17 +11,17 @@
     Yuk, bersama Anti-MAAG mari berdonasi untuk yang membutuhkan
     <br>
     <br>
-    <form>
+    <form action="donationForm.html" method="get">
         <label for="nama">Nama Pendonasi: </Label><br>
-            <input type="text"
+            <input type="text" name="namadonatur"
             placeholder="Tengku Naufal Adam" required><br><br>
         <label for="mail">E-Mail: (Resi pembayaran akan dikirimkan melalui E-Mail)</label><br>
             <input type="email"
-            placeholder="nama@email.com" required
+            placeholder="nama@email.com" required name="emailform"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
             title="Masukkan Format Email dengan benar"><br><br> 
         <label for="nohp">Nomor Handphone:</label><br>
-        <select name="regcode" id="regcode">
+        <select name="regcode" id="regcode"> 
             <option data-countryCode="ID" value="62">Indonesia (+62)</option>
             <option data-countryCode="DZ" value="213">Algeria (+213)</option>
             <option data-countryCode="AD" value="376">Andorra (+376)</option>
@@ -237,10 +237,10 @@
             <option data-countryCode="ZM" value="260">Zambia (+260)</option>
             <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
         </select>           
-            <input type="text" pattern=".{8,}" required
+            <input type="text" name="nohp" pattern=".{8,}" required
             placeholder="81234567890"><br><br>
         <label for="jumdonasi">Jumlah Donasi: (Min Rp10.000 dalam Satuan IDR)</label><br>
-            <input type="number" required
+            <input type="number" name="jumlahdonasi" required
             placeholder="Rp.100.000,00,-" min="10000"
             title="Tolong masukkan jumlah dengan benar"><br><br>
         <label for="paymeth">Metode Pembayaran: </label><br>
@@ -258,7 +258,7 @@
                 <option value="spay">ShopeePay</option>
                 <option value="LinkAJA">LinkAJA</option>
             </select><br><br><br>
-        <input type="submit" value="KIRIM!">
+        <input type="submit" name="submitbtn" value="KIRIM!">
     </form>
 </body>
 </html>
