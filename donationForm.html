@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=3.0">
     <title>Yuk! Donasi untuk sesama!</title>
+    <link rel="stylesheet" type="text/css" href="css/donation.css"
 </head>
 <body>
     Yuk, bersama Anti-MAAG mari berdonasi untuk sesama!
@@ -13,15 +14,15 @@
     <br>
     <form action="donationForm.html" method="get">
         <label for="nama">Nama Pendonasi: </Label><br>
-            <input type="text" name="namadonatur"
+            <input type="text" style="border:solid red 2px" style="color: red;" name="namadonatur"
             placeholder="Tengku Naufal Adam" required><br><br>
         <label for="mail">E-Mail: (Resi pembayaran akan dikirimkan melalui E-Mail)</label><br>
-            <input type="email"
+            <input type="email" style="border:solid red 2px" style="color: red;"
             placeholder="nama@email.com" required name="emailform"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
             title="Masukkan Format Email dengan benar"><br><br> 
         <label for="nohp">Nomor Handphone:</label><br>
-        <select name="regcode" id="regcode"> 
+        <select name="regcode" id="regcode" style="border:solid red 2px" style="color: red;"> 
             <option data-countryCode="ID" value="62">Indonesia (+62)</option>
             <option data-countryCode="DZ" value="213">Algeria (+213)</option>
             <option data-countryCode="AD" value="376">Andorra (+376)</option>
@@ -237,14 +238,14 @@
             <option data-countryCode="ZM" value="260">Zambia (+260)</option>
             <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
         </select>           
-            <input type="text" name="nohp" pattern=".{8,}" required
+            <input type="text" style="border:solid red 2px" style="color: red;" name="nohp" pattern=".{8,}" required
             placeholder="81234567890"><br><br>
         <label for="jumdonasi">Jumlah Donasi: (Min Rp10.000 dalam Satuan IDR)</label><br>
-            <input type="number" name="jumlahdonasi" required
+            <input type="number" style="border:solid red 2px" style="color: red;" name="jumlahdonasi" required
             placeholder="Rp.100.000,00,-" min="10000"
             title="Tolong masukkan jumlah dengan benar"><br><br>
         <label for="paymeth">Metode Pembayaran: </label><br>
-            <select name="paymeth" id="paymeth">
+            <select name="paymeth" id="paymeth" style="border:solid red 2px" style="color: red;">
                 <option value="bca">Bank BCA</option>
                 <option value="bni">Bank BNI</option>
                 <option value="danamon">Bank Danamon</option>
