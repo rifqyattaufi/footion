@@ -4,11 +4,17 @@
 </head>
 <body>
     <h1>Login Form</h1>
-    <form>
+    <form action="loginForm.html" method="POST">
         <label>Email: </label>
-        <input type="email">
+        <input type="email" name="email" placeholder="email">
         <br>
-        <label>Password: </label><input type="password">
+        <label>Password: </label><input type="password" name="password">
+        <br>
+        <a href="google.com">forgot password?</a>
+        <br>
         <button type="submit">Login</button>
+    </form>
+    <br>
+        Dont have an account? <a href="registerForm.html">Register</a>
     </form>
 </body>
