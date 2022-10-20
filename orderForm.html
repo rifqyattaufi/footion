@@ -9,9 +9,9 @@
 <body>
     <form action="orderform" method="get">
         <h1><center>Order Form</center></h1>
-        <label for="cari resto">Nama Restoran: </label><br>
-            <select id="cari resto" name="cari resto">
-                <option value="kfc">KFC</option>
+        <label for="cariresto">Nama Restoran: </label><br>
+            <select name="cariresto">
+                <option value="kfc" >KFC</option>
                 <option value="mcd">MCD</option>
                 <option value="richeese">Richeese</option>
                 <option value="a&w">A&W</option>
@@ -20,21 +20,21 @@
             </select>
             <br>
         <label for="pilih makanan">Makanan yang dipesan: </label><br>
-            <input type="checkbox" value="nasi">Nasi
-            <input type="checkbox" value="Ayan">Ayam
-            <input type="checkbox" value="kentang">French Fries
-            <input type="checkbox" value="burger">Burger
-            <input type="checkbox" value="soup">Cream Soup
+            <input type="checkbox" name="makanan" value="nasi">Nasi
+            <input type="checkbox" name="makanan" value="Ayan">Ayam
+            <input type="checkbox" name="makanan" value="kentang">French Fries
+            <input type="checkbox" name="makanan" value="burger">Burger
+            <input type="checkbox" name="makanan" value="soup">Cream Soup
             <br>
-            <input type="checkbox" value="sundae">Sundae
-            <input type="checkbox" value="float">Float
-            <input type="checkbox" value="cola">Cola
-            <input type="checkbox" value="mineral">Air Mineral
+            <input type="checkbox" name="minuman" value="sundae">Sundae
+            <input type="checkbox" name="minuman" value="float">Float
+            <input type="checkbox" name="minuman" value="cola">Cola
+            <input type="checkbox" name="minuman" value="mineral">Air Mineral
             <br>
         <label for="jumlah">Jumlah makanan: </label><br>
-            <input type="number"><br>
+            <input type="number" name="jumlahmakanan"><br>
         <label for="total">Total pesanan: </label><br>
-            <input type=""><br>
+            <input type="number" name="totalpesanan"><br>
         <label for="metodebayar">Metode Pembayaran: </label><br>
             <input type="radio" name="opsi" value="ovo">OVO
             <input type="radio" name="opsi" value="gopay">GoPay
@@ -46,7 +46,7 @@
             <textarea name="alamat" id="alamat" cols="40" rows="10"></textarea>
         <br>
         <label for="submit"></label><br>
-            <input type="submit"><br>
+            <input type="submit" name="submit"><br>
     </form>
 </body>
 </html>
