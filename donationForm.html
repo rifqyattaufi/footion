@@ -8,19 +8,25 @@
     <link rel="stylesheet" type="text/css" href="css/donation.css">
 </head>
 <body>
-    <h1>Yuk, bersama Anti-MAAG mari berdonasi untuk sesama!</h1>
-    <br>
-    <form action="donationForm.html" method="get">
+    <input type="checkbox" id="toggleMode">
+    <label for="toggleMode" class="toggleDark">Dark Mode</label>
+    <label for="toggleMode" class="toggleLight">Light Mode</label>
+    <div id="container">
+        <div class="panel">
+    <h1>Yuk, bersama Anti-MAAG mari berdonasi untuk sesama!</h1><br>
+    <form action="donationForm.html" class="formd" method="get">
         <label for="nama">Nama Pendonasi: </Label><br>
-            <input type="text" style="border:solid red 2px" style="color: red;" name="namadonatur"
+            <input type="text" name="namadonatur"
             placeholder="John Doe" required><br><br>
         <label for="mail">E-Mail: (Resi pembayaran akan dikirimkan melalui E-Mail)</label><br>
-            <input type="email" style="border:solid red 2px" style="color: red;"
+            <input type="email" 
             placeholder="nama@email.com" required name="emailform"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
-            title="Masukkan Format Email dengan benar"><br><br> 
+            title="Masukkan Format Email dengan benar"><br><br>
+            <label for="feedback">Pesan untuk penerima:</label><br>
+            <textarea name="feedback"></textarea><br><br>
         <label for="nohp">Nomor Handphone:</label><br>
-            <select name="regcode" id="regcode" style="border:solid red 2px" style="color: red;"> 
+            <select name="regcode" id="regcode" > 
                 <option data-countryCode="ID" value="62">Indonesia (+62)</option>
                 <option data-countryCode="DZ" value="213">Algeria (+213)</option>
                 <option data-countryCode="AD" value="376">Andorra (+376)</option>
@@ -236,14 +242,14 @@
                 <option data-countryCode="ZM" value="260">Zambia (+260)</option>
                 <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
             </select>           
-            <input type="text" style="border:solid red 2px" style="color: red;" name="nohp" pattern=".{8,}" required
+            <input type="text"  name="nohp" pattern=".{8,}" required
             placeholder="81234567890"><br><br>
         <label for="jumdonasi">Jumlah Donasi: (Min Rp10.000 dalam Satuan IDR)</label><br>
-            <input type="number" style="border:solid red 2px" style="color: red;" name="jumlahdonasi" required
+            <input type="number"  name="jumlahdonasi" required
             placeholder="Rp.100.000,00,-" min="10000"
             title="Tolong masukkan jumlah dengan benar"><br><br>
         <label for="paymeth">Metode Pembayaran: </label><br>
-            <select name="paymeth" id="paymeth" style="border:solid red 2px" style="color: red;">
+            <select name="paymeth" id="paymeth" >
                 <option value="bca">Bank BCA</option>
                 <option value="bni">Bank BNI</option>
                 <option value="danamon">Bank Danamon</option>
@@ -258,6 +264,8 @@
                 <option value="LinkAJA">LinkAJA</option>
             </select><br><br><br>
         <input type="submit" name="submitbtn" value="KIRIM!">
-    </form>
+        </form>
+        </div>
+    </div>
 </body>
 </html>
