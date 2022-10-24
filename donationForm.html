@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yuk! Donasi untuk sesama!</title>
     <link rel="stylesheet" type="text/css" href="css/donation.css">
 </head>
@@ -11,9 +11,13 @@
     <input type="checkbox" id="toggleMode">
     <label for="toggleMode" class="toggleDark">Dark Mode</label>
     <label for="toggleMode" class="toggleLight">Light Mode</label>
+    <video autoplay loop muted id="vid1">
+        <source src="video/donationPageVid01.mp4" type="video/mp4">
+    </video>
     <div id="container">
-        <div class="panel">
-    <h1>Yuk, bersama Anti-MAAG mari berdonasi untuk sesama!</h1><br>
+        <div class="mid">
+            <div class="panels">
+    <div class="title"><h1>Yuk, bersama Anti-MAAG mari berdonasi untuk sesama!</h1><br></div>
     <form action="donationForm.html" class="formd" method="get">
         <label for="nama">Nama Pendonasi: </Label><br>
             <input type="text" name="namadonatur"
@@ -265,6 +269,7 @@
             </select><br><br><br>
         <input type="submit" name="submitbtn" value="KIRIM!">
         </form>
+            </div>
         </div>
     </div>
 </body>

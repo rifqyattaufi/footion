@@ -13,22 +13,19 @@ iku warnae melok putih, nah lek dark mode, baru warnae melok dadi gelap.
 
 
 * {
-    font-family: googlesans;
+    font-family: googlesans; 
 }
 
-:root{
-    --bg: #f8fafc;
-    --panel-bg: #FFFFFF;
-    --panel-border: #CCCCCC;
-    --panel-title: #343f44;
-    --panel-text: #54666d;
-    --btn: #3eb0ef;
+#vid1{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 body{ 
-    
-    margin-left: 2%;
-    margin-top: 2%;
+    margin: 0 auto;
 }
 
 #toggleMode{
@@ -87,9 +84,17 @@ body{
     background-color: var(--bg);
   }
   
+  .title{
+    text-align: center;
+  }
  
-  .panel{
-    margin-top: 20px;
+  .panels{
+    background-color: rgb(255 12 12 / 70%);
+    max-width: 530px;
+    margin: auto;
+    border: 2px solid;
+    border-radius: 24px;
+    padding: 18px 34px 34px;
   }
   
   .panel .content{
@@ -146,12 +151,30 @@ select{
     border: 2px solid red;
 }*/
 
+
+input[type=submit]{
+  border: 0;
+  border-radius: 30px;
+  background-color: aqua;
+  padding: 10px 20px;
+  color: black;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  opacity: 0.7;
+}
 textarea{
-    background-color: var(--panel-text);
-    width: 389px; height: 172px;
-    resize: none; border: 2px solid red;
-    font-family: googlesans; font-size: medium;
+  width: 160px;
+  box-sizing: border-box;
+  background-color: aqua;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: width 0.4s ease-in-out;
 } 
+textarea:focus {
+  width: 370px;
+  height: 125px;
+}
 input{
     background-color: aqua;
 }
