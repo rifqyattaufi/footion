@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/order.css">
     <title>Order Form</title>
 </head>
 <body>
     <form action="orderform.html" method="get">
-        <h1 style="color: deeppink;"><center>Order Form</center></h1>
+        <h1><center>Order Form</center></h1>
+        <p>Lengkapi form dibawah ini untuk melanjutkan transaksi!</p>
         <label for="cariresto">Nama Restoran: </label><br>
             <select name="cariresto">
                 <option value="kfc" >KFC</option>
@@ -43,10 +45,10 @@
             <input type="radio" name="opsi" value="mbanking">MBanking
         <br>
         <label for="alamat">Alamat Tujuan: </label><br>
-            <textarea name="alamat" id="alamat" cols="40" rows="10" style="color: aquamarine;"></textarea>
+            <textarea name="alamat" id="alamat" cols="40" rows="10"></textarea>
         <br>
         <label for="submit"></label><br>
-            <input type="submit" name="submit"><br>
+            <input type="submit" name="submit" value="KIRIM"><br>
     </form>
 </body>
 </html>

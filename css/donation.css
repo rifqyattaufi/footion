@@ -1,3 +1,183 @@
+@font-face {
+    font-family: googlesans;
+    src: url(../fonts/GoogleSans-Regular.ttf);
+}
+
+/** HELP BINGUNG BEDANO DARK KARO WHITE MODE NE AKU 
+
+Iki border textarea jarno abang, ancen ngunu, pengenku lek white mode,
+iku warnae melok putih, nah lek dark mode, baru warnae melok dadi gelap.
+
+
+*/
+
+
+* {
+    font-family: googlesans; 
+}
+
+#vid1{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 body{ 
+    margin: 0 auto;
+}
+
+#toggleMode{
+    visibility: hidden;
+}
+
+.toggleDark,
+.toggleLight{
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+}
+
+.toggleDark{
+    display: block;
+    color: #222;
+}
+  
+  .toggleDark:hover{
+    color: blue;
+}
+  
+  .toggleLight{
+    display: none;
+    color: hotpink;
+}
+  
+  #toggleMode:checked ~ .toggleDark{
+    display: none;
+}
+  
+  #toggleMode:checked ~ .toggleLight{
+    display: block;
+}
+#container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg);
+    z-index: 1;
+    padding: 50px 20px;
+  }
+  
+  #toggleMode:checked ~ #container{
+    --bg: #505456;
+    --panel-bg: #111413;
+    --panel-border: #1f2322;
+    --panel-title: #8e9294;
+    --panel-text: #505456;
+    --btn: #2962fe;
+    
+    background-color: var(--bg);
+  }
+  
+  .title{
+    text-align: center;
+  }
+ 
+  .panels{
+    background-color: rgb(255 12 12 / 70%);
+    max-width: 530px;
+    margin: auto;
+    border: 2px solid;
+    border-radius: 24px;
+    padding: 18px 34px 34px;
+  }
+  
+  .panel .content{
+    width: 70%;
+    float: left;
+    padding: 20px;
+    background-color: var(--panel-bg);
+    height: 300px;
+    border-radius: 0 10px 10px 0;
+    border-top: 1px solid var(--panel-border);
+    border-right: 1px solid var(--panel-border);
+    border-bottom: 1px solid var(--panel-border);
+    box-sizing: border-box;
+  }
+  
+  .panel .content h2{
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: var(--panel-title);
+  }
+  
+  .panel .content p{
+    margin-top: 10px;
+    font-weight: 300;
+    color: var(--panel-text);
+  }
+  
+  .panel .content button{
+    border: 0;
+    border-radius: 3px;
+    background-color: var(--btn);
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .panel .content button:hover{
+    opacity: 0.7;
+  }
+
+/** 
+MASIH DICOMMENT GANGERTI CARANYA!
+
+input[type=text]{
+    border: 2px solid red;
+}
+input[type=email]{
+    border: 2px solid red;
+}
+input[type=number]{
+    border: 2px solid red;
+}
+select{ 
+    border: 2px solid red;
+}*/
+
+
+input[type=submit]{
+  border: 0;
+  border-radius: 30px;
+  background-color: aqua;
+  padding: 10px 20px;
+  color: black;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  opacity: 0.7;
+}
+textarea{
+  width: 160px;
+  box-sizing: border-box;
+  background-color: aqua;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: width 0.4s ease-in-out;
+} 
+textarea:focus {
+  width: 370px;
+  height: 125px;
+}
+input{
+    background-color: aqua;
+}
+select{
     background-color: aqua;
 }
