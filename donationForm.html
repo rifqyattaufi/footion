@@ -8,16 +8,15 @@
     <link rel="stylesheet" type="text/css" href="css/donation.css">
 </head>
 <body>
-    <input type="checkbox" id="toggleMode">
-    <label for="toggleMode" class="toggleDark">Dark Mode</label>
-    <label for="toggleMode" class="toggleLight">Light Mode</label>
     <video autoplay loop muted id="vid1">
         <source src="video/donationPageVid01.mp4" type="video/mp4">
     </video>
     <div id="container">
         <div class="mid">
             <div class="panels">
-    <div class="title"><h1>Yuk, bersama Anti-MAAG mari berdonasi untuk sesama!</h1><br></div>
+                <div class="logof"> 
+                    <img src="pics/logodform.png" alt="logo"></div>
+    <div class="title"><h1>Bersama Footion, Mari Berdonasi Untuk Sesama</h1><br></div>
     <form action="donationForm.html" class="formd" method="get">
         <label for="nama">Nama Pendonasi: </Label><br>
             <input type="text" name="namadonatur"
@@ -28,7 +27,7 @@
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
             title="Masukkan Format Email dengan benar"><br><br>
             <label for="feedback">Pesan untuk penerima:</label><br>
-            <textarea name="feedback"></textarea><br><br>
+            <textarea placeholder="Wahai penerima, semoga bermanfaat ya :)" name="feedback"></textarea><br><br>
         <label for="nohp">Nomor Handphone:</label><br>
             <select name="regcode" id="regcode" > 
                 <option data-countryCode="ID" value="62">Indonesia (+62)</option>
