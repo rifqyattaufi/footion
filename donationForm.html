@@ -8,9 +8,6 @@
     <link rel="stylesheet" type="text/css" href="css/donation.css">
 </head>
 <body>
-    <input type="checkbox" id="toggleMode">
-    <label for="toggleMode" class="toggleDark">Dark Mode</label>
-    <label for="toggleMode" class="toggleLight">Light Mode</label>
     <video autoplay loop muted id="vid1">
         <source src="video/donationPageVid01.mp4" type="video/mp4">
     </video>
@@ -28,7 +25,7 @@
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
             title="Masukkan Format Email dengan benar"><br><br>
             <label for="feedback">Pesan untuk penerima:</label><br>
-            <textarea name="feedback"></textarea><br><br>
+            <textarea placeholder="Wahai penerima, semoga bermanfaat ya :)" name="feedback"></textarea><br><br>
         <label for="nohp">Nomor Handphone:</label><br>
             <select name="regcode" id="regcode" > 
                 <option data-countryCode="ID" value="62">Indonesia (+62)</option>
