@@ -3,15 +3,6 @@
     src: url(../fonts/GoogleSans-Regular.ttf);
 }
 
-/** HELP BINGUNG BEDANO DARK KARO WHITE MODE NE AKU 
-
-Iki border textarea jarno abang, ancen ngunu, pengenku lek white mode,
-iku warnae melok putih, nah lek dark mode, baru warnae melok dadi gelap.
-
-
-*/
-
-
 * {
     font-family: googlesans; 
 }
@@ -62,46 +53,8 @@ body{
     padding: 0px 20%;
   }
 
-  .panel .content{
-    width: 70%;
-    float: left;
-    padding: 20px;
-    background-color: var(--panel-bg);
-    height: 300px;
-    border-radius: 0 10px 10px 0;
-    border-top: 1px solid var(--panel-border);
-    border-right: 1px solid var(--panel-border);
-    border-bottom: 1px solid var(--panel-border);
-    box-sizing: border-box;
-  }
-  
-  .panel .content h2{
-    margin-top: 20px;
-    margin-bottom: 0;
-    color: var(--panel-title);
-  }
-  
-  .panel .content p{
-    margin-top: 10px;
-    font-weight: 300;
-    color: var(--panel-text);
-  }
-  
-  .panel .content button{
-    border: 0;
-    border-radius: 3px;
-    background-color: var(--btn);
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .panel .content button:hover{
-    opacity: 0.7;
-  }
-
 /** 
-
+Simpanan
 }
 input[type=email]{
     border: 2px solid red;
