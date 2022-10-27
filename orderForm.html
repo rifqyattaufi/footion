@@ -8,10 +8,12 @@
     <title>Order Form</title>
 </head>
 <body>
-    <form action="orderform.html" method="get">
-        <h1><center>Order Form</center></h1>
-        <p>Lengkapi form dibawah ini untuk melanjutkan transaksi!</p>
-        <label for="cariresto">Nama Restoran: </label><br>
+    <div class="kotak">
+
+        <form action="orderform.html" method="get">
+            <h1><center>Order Form</center></h1>
+            <p>Lengkapi form dibawah ini untuk melanjutkan transaksi!</p>
+            <label for="cariresto">Nama Restoran: </label><br>
             <select name="cariresto">
                 <option value="kfc" >KFC</option>
                 <option value="mcd">MCD</option>
@@ -33,22 +35,23 @@
             <input type="checkbox" name="minuman" value="cola">Cola
             <input type="checkbox" name="minuman" value="mineral">Air Mineral
             <br>
-        <label for="jumlah">Jumlah makanan: </label><br>
+            <label for="jumlah">Jumlah makanan: </label><br>
             <input type="number" name="jumlahmakanan"><br>
-        <label for="total">Total pesanan: </label><br>
+            <label for="total">Total pesanan: </label><br>
             <input type="number" name="totalpesanan"><br>
-        <label for="metodebayar">Metode Pembayaran: </label><br>
+            <label for="metodebayar">Metode Pembayaran: </label><br>
             <input type="radio" name="opsi" value="ovo">OVO
             <input type="radio" name="opsi" value="gopay">GoPay
             <input type="radio" name="opsi" value="dana">Dana
             <input type="radio" name="opsi" value="linkaja">LinkAja
             <input type="radio" name="opsi" value="mbanking">MBanking
-        <br>
-        <label for="alamat">Alamat Tujuan: </label><br>
+            <br>
+            <label for="alamat">Alamat Tujuan: </label><br>
             <textarea name="alamat" id="alamat" cols="40" rows="10"></textarea>
-        <br>
-        <label for="submit"></label><br>
-            <input type="submit" name="submit" value="KIRIM"><br>
-    </form>
-</body>
-</html>
+            <br>
+            <label for="submit"></label><br>
+            <input type="submit" name="submit" value="KIRIM" class="tombol"><br>
+        </form>
+    </div>
+    </body>
+    </html>
