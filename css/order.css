@@ -9,12 +9,18 @@
 
 .judul{
     background-color: #D9D9D9;
-    border-radius: 26px;
+    border-radius: 10px;
     margin-bottom: 20px;
-    padding: 20px;
+    width: 94%;
+    padding: 15px;
     content: "";
     display: table;
     clear: both;
+}
+
+.judul p{
+    color: black;
+    font-size: 23px;
 }
 
 .tombol{
@@ -33,4 +39,8 @@
 .column{
     width: 150px;
     float: left;
+}
+
+img{
+    width: 200px;
 }
