@@ -11,8 +11,8 @@
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: auto;
-  min-height: auto;
+  width: 1920px;
+  height: 1080px;
 }
 
 #container{
