@@ -72,11 +72,13 @@
                 <label for="total">Total pesanan: </label><br>
                 <input type="number" name="totalpesanan"><br><br>
                 <label for="metodebayar">Metode Pembayaran: </label><br>
-                <input type="radio" name="opsi" value="ovo">OVO
-                <input type="radio" name="opsi" value="gopay">GoPay
-                <input type="radio" name="opsi" value="dana">Dana
-                <input type="radio" name="opsi" value="linkaja">LinkAja
-                <input type="radio" name="opsi" value="mbanking">MBanking
+                <select name="metodebayar">
+                    <option value="dana">DANA</option>
+                    <option value="linkaja">LinkAja</option>
+                    <option value="gopay">Gopay</option>
+                    <option value="mbanking">MBanking</option>
+                    <option value="qris">QRIS</option>
+                </select>
                 <br>
                 <br>
             <label for="alamat">Alamat Tujuan: </label><br>
