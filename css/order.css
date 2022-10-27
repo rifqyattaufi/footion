@@ -1,5 +1,46 @@
-body{
-    background-color: hotpink;
-    margin-left: 2%;
-    margin-top: 2%;
+.kotak{
+    background-color: #1C3879;
+    width: 500px;
+    margin: auto;
+    border-radius: 25px;
+    padding: 17px;
+    color: white;
+}
+
+.judul{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 94%;
+    padding: 15px;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.judul p{
+    color: black;
+    font-size: 23px;
+}
+
+.tombol{
+    border-style: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.row{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column{
+    width: 150px;
+    float: left;
+}
+
+img{
+    width: 200px;
 }
