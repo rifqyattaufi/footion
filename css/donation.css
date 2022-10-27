@@ -15,15 +15,6 @@
   min-height: 100%;
 }
 
-body{ 
-    margin: 0 auto;
-}
-
-#toggleMode{
-    visibility: hidden;
-}
-
-
 #container{
     position: absolute;
     top: 0;
