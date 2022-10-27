@@ -13,3 +13,14 @@
     height: 30px;
     border-radius: 4px;
 }
+
+.row{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column{
+    width: 150px;
+    float: left;
+}
