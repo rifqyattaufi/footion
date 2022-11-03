@@ -9,7 +9,7 @@
 }
 
 .column{
-    float: right;
+    float: left;
     margin-left: 30px;
 }
 
@@ -21,6 +21,7 @@
     content: "";
     display: table;
     clear: both;
+    width: 96%;
 }
 
 .header p{
@@ -58,7 +59,7 @@
 }
 
 img{
-    width: 240px;
+    margin-top: 20px;
     height: 65px;
 }
 
