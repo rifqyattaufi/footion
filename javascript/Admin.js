@@ -8,4 +8,7 @@ class Admin extends User{
     editRestoran(){
         console.log('mengubah resto')
     }
+    acceptDoination(){
+        console.log('menerima donasi')
+    }
 }

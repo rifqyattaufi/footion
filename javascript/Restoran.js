@@ -1,4 +1,5 @@
-class Restoran{
+class Restoran extends User{
+    id;
     nama;
     menu;
     alamat;
