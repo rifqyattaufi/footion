@@ -1,10 +1,15 @@
-class Review{
+class Review {
+    id_user;
+    id_penjual;
     id_review;
-    kiritik;
+    kritik;
     rating;
     bukti;
 
-    submitReview(){
+    submitReview() {
         console.log('Submit Review')
+    }
+    seeReview() {
+        console.log('see review')
     }
 }
