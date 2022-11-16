@@ -82,3 +82,16 @@ loginForm.addEventListener('submit', (login) => {
 /*
     ----------------------------Proses Validating Halaman Order Form---------------------------
 */
+const orderForm = document.getElementById('order');
+
+orderForm.addEventListener('submit', (order) => {
+    order.preventDefault();
+
+    console.log(orderForm.resto.value);
+    console.log(orderForm.pesanan.value);
+    console.log(orderForm.jumlah.value);
+    console.log(orderForm.total.value);
+    console.log(orderForm.bayar.value);
+    console.log(orderForm.alamat.value);
+    alert('Alamat belum diisi')
+});
