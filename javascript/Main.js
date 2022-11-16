@@ -63,6 +63,7 @@ loginForm.addEventListener('submit', (login) => {
         console.log(loginForm.password.value);
         console.log('Login successful!');
         alert('Login Berhasil');
+        window.location.replace("index.html");
     }     
 });
 
