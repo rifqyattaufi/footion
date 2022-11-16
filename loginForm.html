@@ -11,15 +11,16 @@
         </div>
         <div class="form-group">
             <h1>Login</h1>
-            <form action="/" method="POST">
+            <form action="/" method="POST" id="login">
                 <div class="form-control">
                     <label>Email: </label>
                     <br>
-                    <input type="email" name="email" placeholder="example@email.com">
+                    <input type="text" name="email" placeholder="example@email.com" autocomplete="off">
                 </div>
                 <div class="form-control">
-                    <label>Password: </label><input type="password" name="password">
+                    <label>Password: </label>
                     <br>
+                    <input type="password" name="password" autocomplete="off">
                 </div>
                 <a href="google.com" class="text">forgot password?</a>
                 <br>
@@ -29,4 +30,5 @@
             <p class="text">don't have an account? <a href="registerForm.html" class="text">Register</a></p>
         </div>
     </div>
+    <script src="javascript/Main.js"></script>
 </body>

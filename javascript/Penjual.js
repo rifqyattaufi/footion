@@ -9,4 +9,4 @@ class Penjual extends User{
     editMenu(){
         console.log("Edit Menu")
     }
-}*                                                                                                                                                                                                                                                                                                                                                                             
+}                                                                                                                                                                                                                                                                                                                                                                        
