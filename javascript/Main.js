@@ -74,7 +74,14 @@ loginForm.addEventListener('submit', (login) => {
 /*
     ----------------------------Proses Validating Halaman Donation Form---------------------------
 */
+const donateForm = document.getElementById('sbmt').addEventListener("click", function(subb){
 
+    subb.preventDefault();
+
+    alert('halo bang')
+});
+    
+    
 /*
     ----------------------------Proses Validating Halaman Driver Form---------------------------
 */
