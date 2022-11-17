@@ -13,11 +13,11 @@
             <img src="img/logo.png" class="coloumn">
             <p class="coloumn">Bersama Footion, Mari Berdonasi Untuk Sesama!</p>
         </div>
-        <form action="orderform.html" method="get" id="order">
+        <form action="orderForm.html" method="post" id="order">
             <h1><center>Order Form</center></h1>
             <p>Lengkapi form dibawah ini untuk melanjutkan transaksi!</p>
             <label for="cariresto">Nama Restoran: </label><br>
-            <select name="cariresto">
+            <select name="cariresto" id="resto">
                 <option value="kfc" >KFC</option>
                 <option value="mcd">MCD</option>
                 <option value="richeese">Richeese</option>
@@ -87,7 +87,7 @@
             <textarea name="alamat" id="alamat" cols="40" rows="10"></textarea>
             <br>
             <label for="submit"></label><br>
-            <input type="submit" name="submit" value="KIRIM" class="tombol"><br>
+            <input type="submit" name="submit" id="submit" value="KIRIM" class="tombol"><br>
         </form>
     </div>
     <script src="javascript/Main.js"></script>
