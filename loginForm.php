@@ -11,7 +11,7 @@
         </div>
         <div class="form-group">
             <h1>Login</h1>
-            <form action="/" method="POST" id="login">
+            <form action="/" method="get" id="login">
                 <div class="form-control">
                     <label>Email: </label>
                     <br>
@@ -25,7 +25,7 @@
                 <a href="google.com" class="text">forgot password?</a>
                 <br>
                 <br>
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn" id="submit">Login</button>
             </form>
             <p class="text">don't have an account? <a href="registerForm.html" class="text">Register</a></p>
         </div>
