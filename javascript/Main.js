@@ -57,7 +57,7 @@ const validatePassword = (password) => {
 const loginForm = document.getElementById('login');
 
 if (loginForm != null) {
-    SubmitButton.onclick = (e) => {
+    SubmitButton.onclick = (e) => { 
         if (validateEmail(loginForm.email.value) && validatePassword(loginForm.password.value)) {
             console.log(loginForm.email.value);
             console.log(loginForm.password.value);
