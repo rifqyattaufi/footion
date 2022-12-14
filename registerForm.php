@@ -15,7 +15,7 @@
         </div>
         <div class="form-group">
             <h1>Register Form</h1>
-            <form action="registerForm.html" method="get">
+            <form action="php/prosesRegister.php" method="POST">
                 <div class="form-control">
                     <label>Nama Lengkap</label>
                     <input type="text" name="namalengkap">
@@ -30,9 +30,9 @@
                 </div>
                 <label>Jenis Kelamin</label><br>
                 <label>Laki - Laki</label>
-                <input type="radio" name="lk" >
+                <input type="radio" name="gender" id="gender" value="laki!!!">
                 <label>Perempuan</label>
-                <input type="radio" name="pr">
+                <input type="radio" name="gender" id="gender" value="wedok">
                 <div class="form-control">
                     <label>Password</label>
                     <input type="password" name="pass">
