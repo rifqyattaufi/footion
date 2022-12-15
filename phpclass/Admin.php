@@ -1,14 +1,15 @@
+<?php
 class Admin extends User{
-    addRestoran(){
-        console.log('tambah resto')
+    function addRestoran(){
+        echo 'tambah resto';
     }
-    removeRestoran(){
-        console.log('hapus resto')
+    function removeRestoran(){
+        echo 'hapus resto';
     }
-    editRestoran(){
-        console.log('mengubah resto')
+    function editRestoran(){
+        echo 'mengubah resto';
     }
-    acceptDoination(){
-        console.log('menerima donasi')
+    function acceptDoination(){
+        echo 'menerima donasi';
     }
 }

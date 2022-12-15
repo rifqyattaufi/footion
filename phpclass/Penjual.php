@@ -1,12 +1,31 @@
+<?php
 class Penjual extends User{
-    nama;
-    menu;
-    alamat;
+    public $nama;
+    public $alamat;
 
-    seeOrder(){
-        console.log("See Order")
+    public function __construct($nama, $alamat) {
+        $this->$nama = $nama;
+        $this->$alamat = $alamat;
     }
-    editMenu(){
-        console.log("Edit Menu")
+
+    function addPenjual($nama, $alamat){
+        $this->$nama = $nama;
+        $this->$alamat = $alamat;
+        echo "add penjual";
     }
+    function editPenjual($nama, $alamat)
+    {
+        $this->$nama = $nama;
+        $this->$alamat = $alamat;
+        echo "edit penjual";
+    }
+    public function deletePenjual()
+    {
+        echo "delete penjual";
+    }
+    public function seePenjual()
+    {
+        echo "see penjual ". $nama . " " . $alamat; 
+    }
+
 }                                                                                                                                                                                                                                                                                                                                                                        

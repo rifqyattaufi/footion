@@ -1,15 +1,19 @@
+<?php
 class Review {
-    id_user;
-    id_penjual;
-    id_review;
-    kritik;
-    rating;
-    bukti;
+    public $id_user;
+    public $id_penjual;
+    public $id_review;
+    public $kritik;
+    public $rating;
+    public $bukti;
 
-    submitReview() {
-        console.log('Submit Review')
+    function submitReview() {
+        echo 'Submit Review'
     }
-    seeReview() {
-        console.log('see review')
+    function seeReview() {
+        echo 'see review'
+    }
+    function deletereview(){
+        echo 'delete review'
     }
 }

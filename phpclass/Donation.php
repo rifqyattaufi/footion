@@ -1,9 +1,10 @@
+<?php 
 class Donation{
-    id;
-    id_restoran;
-    id_user;
-    pesan;
-    donasi;
+    public $id;
+    public $id_restoran;
+    public $id_user;
+    public $pesan;
+    public $donasi;
     
     
 }

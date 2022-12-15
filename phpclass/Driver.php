@@ -1,14 +1,29 @@
+<?php
 class Driver extends User{
-    nama;
-    ttl;
-    gender;
-    tipeMotor;
-    sim;
+    public $nama;
+    private $ttl;
+    public $gender;
+    public $tipeMotor;
+    private $sim;
 
-    register(){
-        console.log('register driver')
+    public function __construct($nama, $ttl, $gender, $tipeMotor, $sim) {
+        $this->$nama = $nama;
+        $this->$ttl = $ttl;
+        $this->$gender = $gender;
+        $this->$tipeMotor = $tipeMotor;
+        $this->$sim = $sim;
     }
-    acceptOrder(){
-        console.log('order acc')
+    public function editDriver($nama, $ttl, $gender, $tipeMotor, $sim)
+    {
+        $this->$nama = $nama;
+        $this->$ttl = $ttl;
+        $this->$gender = $gender;
+        $this->$tipeMotor = $tipeMotor;
+        $this->$sim = $sim;
+        echo "edit driver"
+    }
+    public function deleteDriver()
+    {
+        echo "delete driver";
     }
 }

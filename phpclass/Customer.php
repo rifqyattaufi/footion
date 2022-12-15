@@ -1,15 +1,16 @@
+<?php
 class Customer extends User{
-    gender;
-    ttl;
-    nama;
+    public $gender;
+    public $ttl;
+    public $nama;
 
-    register(){
-        console.log('register customer')
+    function register(){
+        echo 'register customer';
     }
-    makeOrder(){
-        console.log('bikin pesanan')
+    function makeOrder(){
+        echo 'bikin pesanan';
     }
-    makeDonation(){
-        console.log('mengirim donasi')
+    function makeDonation(){
+        echo 'mengirim donasi';
     }
 }

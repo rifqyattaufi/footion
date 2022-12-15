@@ -4,13 +4,13 @@ class User{
     protected $email;
     protected $password;
     
-    login() {
+    function login() {
         echo 'login';
     }
-    updateUser() {
-
+    function editProfile() {
+        echo 'edit profile';
     }
-    deleteUser() {
-
+    function deleteUser() {
+        echo 'delete user';
     }
 }
