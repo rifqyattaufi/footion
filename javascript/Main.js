@@ -1,3 +1,4 @@
+const SubmitButton = document.getElementById('submit');
 /*
     ----------------------------fungsi pengecekenan---------------------------
 */
@@ -55,17 +56,18 @@ const validatePassword = (password) => {
 */
 const loginForm = document.getElementById('login');
 
-loginForm.addEventListener('submit', (login) => {
-    login.preventDefault();
-
-    if (validateEmail(loginForm.email.value) && validatePassword(loginForm.password.value)) {
-        console.log(loginForm.email.value);
-        console.log(loginForm.password.value);
-        console.log('Login successful!');
-        alert('Login Berhasil');
-        window.location.replace("index.html");
-    }     
-});
+if (loginForm != null) {
+    SubmitButton.onclick = (e) => { 
+        if (validateEmail(loginForm.email.value) && validatePassword(loginForm.password.value)) {
+            console.log(loginForm.email.value);
+            console.log(loginForm.password.value);
+            console.log('Login successful!');
+            alert('Login Berhasil');
+            console.log(loginForm);
+            loginForm.submit();
+        }
+    };
+}
 
 /*
     ----------------------------Proses Validating Halaman Register Form---------------------------
@@ -84,14 +86,19 @@ loginForm.addEventListener('submit', (login) => {
 */
 const orderForm = document.getElementById('order');
 
-orderForm.addEventListener('submit', (order) => {
-    order.preventDefault();
-
-    console.log(orderForm.resto.value);
-    console.log(orderForm.pesanan.value);
-    console.log(orderForm.jumlah.value);
-    console.log(orderForm.total.value);
-    console.log(orderForm.bayar.value);
-    console.log(orderForm.alamat.value);
-    alert('Alamat belum diisi')
-});
+if (orderForm != null) {
+    SubmitButton.onclick = (e) => {
+        e.preventDefault();
+        if (!isRequired(orderForm.resto.value)) {
+            alert("Resto Is Required");
+        } else {
+            console.log(orderForm.resto.value);
+        }
+        console.log(orderForm.pesanan.value);
+        console.log(orderForm.jumlah.value);
+        console.log(orderForm.total.value);
+        console.log(orderForm.bayar.value);
+        console.log(orderForm.alamat.value);
+        alert('order berhasil')
+    };
+}
