@@ -11,7 +11,7 @@
         </div>
         <div class="form-group">
             <h1>Login</h1>
-            <form action="/" method="get" id="login">
+            <form action="php/proseslogin.php" method="post" id="login">
                 <div class="form-control">
                     <label>Email: </label>
                     <br>
@@ -30,5 +30,5 @@
             <p class="text">don't have an account? <a href="registerForm.html" class="text">Register</a></p>
         </div>
     </div>
-    <script src="javascript/Main.js"></script>
+    <!-- <script src="javascript/Main.js"></script> -->
 </body>
