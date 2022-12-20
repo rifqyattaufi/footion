@@ -1,16 +1,27 @@
 <?php
-class Customer extends User{
+require('../Koneksi.php');
+require('User.php');
+class Customer extends User
+{
     public $gender;
     public $ttl;
     public $nama;
 
-    function register(){
-        echo 'register customer';
+    public function __construct($nama, $email, $ttl, $gender, $password)
+    {
+        $this->nama = $nama;
+        $this->email = $email;
+        $this->ttl = $ttl;
+        $this->gender = $gender;
+        $this->password = $password;
     }
-    function makeOrder(){
-        echo 'bikin pesanan';
-    }
-    function makeDonation(){
-        echo 'mengirim donasi';
+
+    function register()
+    {
+        $db = new Koneksi();
+        $query = "INSERT INTO `customer` (`nama`, `email`, `ttl`, `gender`, `password`) VALUES (?, ?, ?, ?, ?)";
+        $statement = $db->db->prepare($query);
+        $parameters = [$this->nama, $this->email, $this->ttl, $this->gender, $this->password];
+        return $statement->execute($parameters);
     }
 }

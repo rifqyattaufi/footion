@@ -1,7 +1,6 @@
 <?php
 class User{
-    public $id;
-    protected $email;
+    public $email;
     protected $password;
     
     function login() {

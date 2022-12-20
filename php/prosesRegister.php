@@ -1,14 +1,11 @@
 <?php
-$Nama = $_POST['namalengkap'];
-$Email = $_POST['emailuser'];
-$Tanggal = $_POST['ttluser'];
-$Jender = $_POST['gender'];
-$Password = $_POST['pass'];
-$Ulang = $_POST['repass'];
+require("../phpclass/Customer.php");
+$nama = $_POST['namaLengkap'];
+$email = $_POST['emailUser'];
+$tanggal = $_POST['ttlUser'];
+$gender = $_POST['gender'];
+$password = $_POST['pass'];
 
-echo $Nama."<br>";
-echo $Email."<br>";
-echo $Tanggal."<br>";
-echo $Jender."<br>";
-echo $Password."<br>";
-echo $Ulang."<br>";
+$customer = new Customer($nama, $email, $tanggal, $gender, $password);
+$customer->register();
+header("Location: ../index.php");

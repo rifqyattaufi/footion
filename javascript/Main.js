@@ -72,6 +72,24 @@ if (loginForm != null) {
 /*
     ----------------------------Proses Validating Halaman Register Form---------------------------
 */
+// const registerForm = document.getElementById('login');
+
+// if (loginForm != null) {
+//     SubmitButton.onclick = (e) => { 
+//         if (!isRequired(registerForm.name.value)) {
+//             alert("Name Is Required");
+//         }
+//         }
+//         if (validateEmail(loginForm.email.value) && validatePassword(loginForm.password.value)) {
+//             console.log(loginForm.email.value);
+//             console.log(loginForm.password.value);
+//             console.log('Login successful!');
+//             alert('Login Berhasil');
+//             console.log(loginForm);
+//             // registerForm.submit();
+//         }
+//     };
+// }
 
 /*
     ----------------------------Proses Validating Halaman Donation Form---------------------------
