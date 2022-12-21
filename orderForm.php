@@ -13,7 +13,7 @@
             <img src="img/logo.png" class="coloumn">
             <p class="coloumn">Bersama Footion, Mari Berdonasi Untuk Sesama!</p>
         </div>
-        <form action="orderForm.html" method="post" id="order">
+        <form action="php/order.php" method="POST" id="order">
             <h1><center>Order Form</center></h1>
             <p>Lengkapi form dibawah ini untuk melanjutkan transaksi!</p>
             <label for="cariresto">Nama Restoran: </label><br>
