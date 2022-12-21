@@ -30,7 +30,7 @@
         <label for="pilih makanan">Makanan yang dipesan: </label><br>
             <div class="row">
                 <div class="column">
-                    <input type="da" name="makanan" value="nasi">
+                    <input type="checkbox" name="makanan" value="nasi">
                     <label>Nasi</label>
                 </div>
                 <div class="column">
