@@ -13,34 +13,34 @@
     </header>
     <div class="container">
         <div class="row">
-            <a href="donationForm.html">
+            <a href="donationForm.php">
             <div class="column">
                 <img src="img/daontion.png" alt="" class="icon">
             </div>
             </a>
-            <a href="kritikDanSaran.html">
+            <a href="kritikDanSaran.php">
             <div class="column">
                 <img src="img/kritik.png" alt="" class="icon">
             </div>
             </a>
-            <a href="registerForm.html">
+            <a href="registerForm.php">
             <div class="column">
                 <img src="img/registrasi.png" alt="" class="regis">
             </div>
             </a>
         </div>
         <div class="row">
-            <a href="loginForm.html">
+            <a href="loginForm.php">
             <div class="column">
                 <img src="img/login.png" alt="" class="overflow">
             </div>
             </a>
-            <a href="orderForm.html">
+            <a href="orderForm.php">
             <div class="column">
                 <img src="img/order.png" alt="" class="icon">
             </div>
             </a>
-            <a href="registrasiDriver.html">
+            <a href="registrasiDriver.php">
             <div class="column">
                 <img src="img/registrasi driver.png" alt="" class="overflow">
             </div>

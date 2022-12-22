@@ -13,11 +13,11 @@
             <img src="img/logo.png" class="coloumn">
             <p class="coloumn">Bersama Footion, Mari Berdonasi Untuk Sesama!</p>
         </div>
-        <form action="php/order.php" method="POST" id="order">
+        <form action="php/prosesOrder.php" method="POST" id="order">
             <h1><center>Order Form</center></h1>
             <p>Lengkapi form dibawah ini untuk melanjutkan transaksi!</p>
             <label for="cariresto">Nama Restoran: </label><br>
-            <select name="cariresto" id="resto">
+            <select name="resto" id="resto">
                 <option value="kfc" >KFC</option>
                 <option value="mcd">MCD</option>
                 <option value="richeese">Richeese</option>
@@ -34,7 +34,7 @@
                     <label>Nasi</label>
                 </div>
                 <div class="column">
-                    <input type="checkbox" name="makanan" value="Ayan">
+                    <input type="checkbox" name="makanan" value="Ayam">
                     <label>Ayam</label>
                 </div>
                 <div class="column">
@@ -87,9 +87,9 @@
             <textarea name="alamat" id="alamat" cols="40" rows="10"></textarea>
             <br>
             <label for="submit"></label><br>
-            <input type="submit" name="submit" id="submit" value="KIRIM" class="tombol"><br>
+            <input type="submit" name="submit" id="submit" class="tombol"><br>
         </form>
     </div>
-    <script src="javascript/Main.js"></script>
+    <!-- <script src="javascript/Main.js"></script> -->
     </body>
     </html>
