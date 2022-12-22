@@ -1,12 +1,11 @@
 <?php
 require("../phpclass/Review.php");
 $nama = $_POST['nama'];
-$id_pesanan = $_POST['nomorpesanan'];
-$id_review = $_POST['idreview'];
-$kritik = $_POST['kritikdansaran'];
+$id_pesanan = $_POST['idPesanan'];
+$kritik = $_POST['kritikSaran'];
 $rating = $_POST['rating'];
-$bukti = $_POST['buktiPesanan'];
+$bukti = $_POST['foto'];
 
-$review = new Review($nama, $id_pesanan, $id_review, $kritik, $rating, $bukti);
+$review = new Review($nama, $id_pesanan, $kritik, $rating, $bukti);
 $review->kritik();
 header("Location: ../index.php");

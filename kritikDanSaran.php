@@ -18,12 +18,12 @@
             <form action="php/memberiReview.php" method="POST" name="kritik" id="kritik">
                 <div class="form-control">
                     <label>
-                        ID pesanan: <input type="text" name="idPesanan" value="1203919203" disabled size="40">
+                        ID pesanan: <input type="text" name="idPesanan" id="idPesanan" value="1203919203" size="40">
                     </label>
                 </div>
                 <div class="form-control">
                     <label>
-                        Nama: <input type="text" name="nama" value="Ahmad Zufar" disabled size="40">
+                        Nama: <input type="text" name="nama" id="nama" value="Ahmad Zufar" size="40">
                     </label>
                 </div>
                 <div class="form-control">
@@ -42,7 +42,7 @@
                 <br>
                 <div class="form-control">                    
                     <label>Bukti Foto: </label>
-                    <input type="file" accept="image/png, image/jpeg" name="foto" required class="input-img">
+                    <input type="file" accept="image/png, image/jpeg" name="foto" id="foto" required class="input-img">
                 </div>
                 <button type="submit" name="submit" class="btn">Submit</button>
             </form>
