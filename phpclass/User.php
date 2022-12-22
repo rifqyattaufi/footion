@@ -4,7 +4,7 @@ class User{
     protected $password;
     
     function login() {
-        echo 'login';
+        
     }
     function editProfile() {
         echo 'edit profile';

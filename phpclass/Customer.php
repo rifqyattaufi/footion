@@ -18,9 +18,9 @@ class Customer extends User
 
     function register()
     {
-        $db = new Koneksi();
+        $conn = new Koneksi();
         $query = "INSERT INTO `customer` (`nama`, `email`, `ttl`, `gender`, `password`) VALUES (?, ?, ?, ?, ?)";
-        $statement = $db->db->prepare($query);
+        $statement = $conn->db->prepare($query);
         $parameters = [$this->nama, $this->email, $this->ttl, $this->gender, $this->password];
         return $statement->execute($parameters);
     }
