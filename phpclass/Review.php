@@ -1,19 +1,29 @@
 <?php
+require('../Koneksi.php');
 class Review {
-    public $id_user;
-    public $id_penjual;
+    public $nama;
+    public $id_pesanan;
     public $id_review;
     public $kritik;
     public $rating;
     public $bukti;
 
-    function submitReview() {
-        echo 'Submit Review'
+    public function __construct($nama, $id_pesanan, $id_review, $kritik, $rating, $bukti)
+    {
+        $this->nama = $nama;
+        $this->id_pesanan = $id_pesanan;
+        $this->id_review = $id_review;
+        $this->kritik = $kritik;
+        $this->rating = $rating;
+        $this->bukti = $bukti;
     }
-    function seeReview() {
-        echo 'see review'
-    }
-    function deletereview(){
-        echo 'delete review'
+
+    function kritik()
+    {
+        $conn = new Koneksi();
+        $query = "INSERT INTO `review`(`Id Pesanan`, `Nama`, `Kritik dan Saran`, `Rating`, `Bukti Foto`) VALUES (?, ?, ?, ?, ?)";
+        $statement = $conn->db->prepare($query);
+        $parameters = [$this->nama, $this->id_pesanan, $this->id_review, $this->kritik, $this->rating, $this->bukti];
+        return $statement->execute($parameters);
     }
 }

@@ -15,7 +15,7 @@
         </div>
         <div class="form-group">
             <h1>Kritik & Saran</h1>
-            <form action="kritikDanSaran.html" method="get">
+            <form action="php/memberiReview.php" method="POST" name="kritik" id="kritik">
                 <div class="form-control">
                     <label>
                         ID pesanan: <input type="text" name="idPesanan" value="1203919203" disabled size="40">
