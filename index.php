@@ -47,6 +47,33 @@
             </a>
         </div>
     </div>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <td>No</td>
+                <td>Email</td>
+                <td>Nama</td>
+                <td>Gender</td>
+            </tr>
+        </thead>
+        <tbody>
+        <?php
+        require('phpclass/Customer.php');
+        $no = 1;
+        foreach(Customer::getCustomer() as $row){
+            echo "
+            <tr>
+                <td>".$no."</td>
+                <td>".$row['email']."</td>
+                <td>".$row['nama']."</td>
+                <td>".$row['gender']."</td>
+                </tr>";
+                $no++;
+        }
+         ?>
+        </tbody>
+    </table>
     <footer>
 
     </footer>
