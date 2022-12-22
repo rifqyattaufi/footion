@@ -14,7 +14,7 @@
             <p class="titletext">Bersama Footion, Mari Berdonasi Untuk Sesama<br></p>
         </div>
         <div class="formm">
-            <form action="donationForm.html" class="formd" method="get">
+            <form action="php/prosesDonation.php" class="formd" method="POST">
         <label for="nama">Nama Pendonasi: </Label><br>
             <input type="text" name="namadonatur"
             placeholder="John Doe" required><br><br>
